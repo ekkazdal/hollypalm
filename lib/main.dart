@@ -1,10 +1,12 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hollypalm/app/application_routes.dart';
 import 'package:hollypalm/app/service_locator.dart';
-import 'package:hollypalm/core/utils/screen_sizes.dart';
+import 'package:hollypalm/_core/utils/theme/screen_sizes.dart';
 
 Future<void> _init() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,13 +26,13 @@ Future<void> main() async {
         startLocale: const Locale('tr'),
         fallbackLocale: const Locale('tr'),
         saveLocale: true,
-        child: const HollyPalmApp(),
+        child: ProviderScope(child: HollyPalmApp()),
       ),
     );
   } catch (e, stackTrace) {
     // Hata durumunda detaylı log
-    print('❌ UYGULAMA BAŞLATMA HATASI: $e');
-    print('📍 Stack Trace: $stackTrace');
+    log('❌ UYGULAMA BAŞLATMA HATASI: $e');
+    log('📍 Stack Trace: $stackTrace');
     rethrow;
   }
 }

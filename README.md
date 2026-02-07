@@ -1,16 +1,26 @@
-# hollypalm
+📂 Klasör Yapısı
 
-A new Flutter project.
+lib/_features: Uygulamanın ana modüllerini (Features) barındırır.
 
-## Getting Started
+presentation: Kullanıcı arayüzü (View) ve iş mantığı (ViewModel) katmanıdır. Her özellik (örn: home, product_detail), kendi View ve ViewModel dosyalarını içerir.
 
-This project is a starting point for a Flutter application.
+data: API yanıt modelleri (response) ve özelliklere özgü enum'ları (enums) içerir.
 
-A few resources to get you started if this is your first Flutter project:
+lib/_core: Proje genelinde paylaşılan altyapı kodlarını içerir.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+base: BaseViewModel gibi temel sınıflar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+services: API çağrılarını yapan servisler (örn: ShopifyServices) ve genel uygulama servisleri.
+
+network: Ağ katmanı yapılandırmaları.
+
+utils: Ortak yardımcı fonksiyonlar ve sabitler.
+
+lib/app: Uygulama konfigürasyonu, ServiceLocator (DI) ve rotalamayı (Routes) yönetir.
+
+🛠️ Teknolojiler & Yaklaşımlar
+State Management: flutter_riverpod (AsyncNotifierProvider kullanımı).
+Dependency Injection: get_it ile servis yönetimi.
+Mimari Desen: ViewModeller doğrudan servisler (_core/services) ile haberleşerek veriyi View katmanına taşır.
+
+AYRICA FARKLI DİLLER İÇİN OLASI ENTEGRASYON DOSYASI Assets klasöründe mevcuttur.

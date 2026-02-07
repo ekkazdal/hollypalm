@@ -1,0 +1,11 @@
+{
+    "tr": "Türkçe",
+    "en": "İngilizce",
+    "application-name": "Holly Palm",
+    "text": {
+        "first-name": "Adınızı giriniz",
+        "last-name": "Soyadınızı giriniz",
+        "close": "Kapat",
+        "error": "Hata"
+    }
+}
