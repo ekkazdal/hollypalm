@@ -72,3 +72,6 @@ Kullanıcı deneyimini en üst düzeyde tutmak için aşağıdaki tasarım karar
     *   Standart Material bileşenleri yerine, markaya özgü `HollyText` ve `HollyColor` yapıları kullanılarak tutarlı bir tipografi ve renk paleti sağlanmıştır.
 *   **Varyant Gösterimi**:
     *   Ürün kartlarında varyantlar (renk/seçenek) sadece metin olarak değil, varsa görselleriyle birlikte yatay bir liste olarak sunularak kullanıcının ürünü keşfetmesi kolaylaştırılmıştır.
+
+
+    EKSTRA OLARAK FARKLI DİLLER İÇİN OLASI DİL DOSYASI Assets klasöründe mevcuttur.
