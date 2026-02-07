@@ -1,0 +1,11 @@
+{
+    "tr": "Turkish",
+    "en": "English",
+    "application-name": "Holly Palm",
+    "text": {
+        "first-name": "Enter your first name",
+        "last-name": "Enter your last name",
+        "close": "Close",
+        "error": "Error"
+    }
+}
